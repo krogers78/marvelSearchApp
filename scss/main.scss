@@ -1,0 +1,49 @@
+@import 'base/reset.scss';
+@import './base/basesetup.scss';
+@import 'base/footer.scss';
+
+header {
+  background: rgba(0, 0, 0, 0.02);
+  text-align: right;
+  h1 {
+    float:left;
+  }
+  img {
+    width: 40%;
+    padding-top: 2rem;
+  }
+  nav {
+    padding: 4rem;
+    li {
+      display: inline-block;
+      padding-right: 5rem;
+    }
+  }
+  a {
+    color: red;
+  }
+}
+.forBackground {
+  height: 30rem;
+}
+#search {
+  form {
+    padding-top: 5rem;
+  }
+  label {
+    margin: 0 auto;
+    display: block;
+    background: #222222;
+    color: #EEEEEE;
+    width: 31rem;
+  }
+  input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50rem;
+    height: 5rem;
+  }
+}
+.searchForm {
+  text-align: center;
+}
