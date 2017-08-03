@@ -77,7 +77,7 @@ footer {
     text-align: center; }
 
 header {
-  background: rgba(0, 0, 0, 0.02);
+  background: rgba(0, 0, 0, 0.2);
   text-align: right; }
   header h1 {
     float: left; }
@@ -91,7 +91,6 @@ header {
       padding-right: 4rem; }
   header a {
     color: #DDD;
-    background: rgba(0, 0, 0, 0.2);
     font-size: 2rem; }
     header a:hover {
       color: white; }
@@ -100,26 +99,43 @@ header {
   height: 40rem;
   background-image: url("../images/heroBackground.jpg"); }
 
+.searchForm {
+  display: block;
+  margin: 0 auto; }
+
+.wrapper {
+  width: 130rem; }
+
 #search form {
-  padding-top: 5rem; }
+  padding-top: 5rem;
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto; }
 
 #search label {
-  margin: 0 auto;
+  text-align: left;
   display: block;
   background: #222222;
   color: #EEEEEE;
   width: 31rem; }
 
 #search input {
-  width: 50rem;
+  display: block;
+  height: 6rem;
+  width: 100%;
+  background: #eee;
+  padding: 0 7rem 0 1rem;
+  position: relative; }
+
+#search button {
+  background-image: url("../images/search.png");
+  background-color: transparent;
+  text-indent: -999rem;
+  width: 5rem;
   height: 5rem;
-  background: #ccc; }
-
-.searchForm {
-  text-align: center; }
-
-.wrapper {
-  width: 130rem; }
+  position: absolute;
+  left: 91rem;
+  top: 19rem; }
 
 #results h2 {
   padding-left: 0.3rem;

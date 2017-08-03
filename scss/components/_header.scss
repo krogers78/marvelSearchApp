@@ -1,0 +1,26 @@
+header {
+  background: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  h1 {
+    float:left;
+  }
+  img {
+    width: 40%;
+    padding-top: 2rem;
+  }
+  nav {
+    padding: 4rem;
+    li {
+      display: inline-block;
+      padding-right: 4rem;
+    }
+  }
+  a {
+    color: #DDD;
+    font-size: 2rem;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
