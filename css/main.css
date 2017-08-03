@@ -88,12 +88,17 @@ header {
     padding: 4rem; }
     header nav li {
       display: inline-block;
-      padding-right: 5rem; }
+      padding-right: 4rem; }
   header a {
-    color: red; }
+    color: #DDD;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 2rem; }
+    header a:hover {
+      color: white; }
 
 .forBackground {
-  height: 30rem; }
+  height: 40rem;
+  background-image: url("../images/heroBackground.jpg"); }
 
 #search form {
   padding-top: 5rem; }
@@ -106,10 +111,34 @@ header {
   width: 31rem; }
 
 #search input {
-  margin-left: auto;
-  margin-right: auto;
   width: 50rem;
-  height: 5rem; }
+  height: 5rem;
+  background: #ccc; }
 
 .searchForm {
   text-align: center; }
+
+.wrapper {
+  width: 130rem; }
+
+#results h2 {
+  padding-left: 0.3rem;
+  margin: 5rem 0 0 35rem;
+  font-size: 2rem;
+  color: #EEE;
+  background: #222;
+  width: 25rem; }
+
+#results p {
+  text-align: center;
+  margin-top: 15rem;
+  font-weight: bold;
+  font-size: 1.9rem; }
+
+#results a {
+  color: #222;
+  border: 0.3rem solid #F5A623;
+  background: #F5A623;
+  padding: 2rem 5rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem; }
