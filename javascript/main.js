@@ -1,5 +1,6 @@
 //https://gateway.marvel.com:443/v1/public/comics?title=Wolverine&apikey=619e8982dc6d0215038b7966347bc50a
 
+const searchSection = document.querySelector('#results')
 const input = document.querySelector('#search input')
 const form = document.querySelector('#search form')
 
@@ -32,10 +33,25 @@ form.addEventListener('submit', e => {
     })
 })
 
+let results = ""
+
 const renderData = (data) => {
+  results += `<div class="wrapper">
+              <h2>Results for ${input.value}</h2>`
+  console.log(`<h2>Results for ${input.value}</h2>`)
+
   data.forEach((item, index) => {
     if(item.title) {
       console.log(item.title)
-    }
-  })
+
+      results += `<article>
+                      <img src="${item.thumbnail.path}.${item.thumbnail.extension}">
+                      <h3>${item.title}</h3>
+                      <p>Issue Number ${item.issueNumber}</p>
+                  </article>`
+  }
+})
+  results += '</div>'
+  searchSection.innerHTML = results
+  results = ""
 }
