@@ -4,17 +4,19 @@
 }
 .searchForm {
   display: block;
-  margin: 0 auto;
+  @extend %center-align;
 }
 .wrapper {
   width: 85%;
 }
 .button {
+  @extend %center-align;
   width: 32rem;
-  margin: 8rem auto 5rem auto;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
   text-align: center;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: $font-size;
   background: $action-color;
   padding: 2rem 5rem;
   border-radius: 0.5rem;

@@ -1,0 +1,32 @@
+#results {
+  .wrapper {
+    @extend %center-align;
+  }
+  h2 {
+    margin: 2rem 0 2rem 0;
+    padding-left: 0.3rem;
+    font-size: $font-size;
+    color: $primary-color;
+    background: $seconday-color;
+    width: 25rem;
+  }
+  article {
+    width: 25%;
+    display: inline-table;
+    padding-bottom: 5rem;
+
+    img {
+      width: 80%;
+      height: 200%;
+    }
+    h3 {
+      @include article-description($seconday-color, $primary-color, 90%, 0.2rem);
+    }
+    p {
+      @include article-description($seconday-color, $primary-color, 90%, 0.2rem);
+    }
+  }
+  a {
+    color: #222;
+  }
+}

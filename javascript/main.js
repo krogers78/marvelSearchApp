@@ -44,13 +44,11 @@ const renderData = (data) => {
     if(item.title) {
       console.log(item.title)
 
-      results += `<article>
-                      <img src="${item.thumbnail.path}.${item.thumbnail.extension}">
-                      <h3>${item.title}</h3>
-                      <p>Issue Number ${item.issueNumber}</p>
-                  </article>`
-  } else {
-    results += '<p>No results to display</p>'
+      results += `<a href="${item.urls[0].url}" target="_blank"><article>
+                  <img src="${item.thumbnail.path}.${item.thumbnail.extension}">
+                  <h3>${item.title}</h3>
+                  <p>Issue Number ${item.issueNumber}</p>
+                </article></a>`
   }
 })
   //to keep the footer at the bottom of the page
