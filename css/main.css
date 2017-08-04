@@ -106,6 +106,16 @@ header {
 .wrapper {
   width: 85%; }
 
+.button {
+  width: 32rem;
+  margin: 8rem auto 5rem auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  background: #F5A623;
+  padding: 2rem 5rem;
+  border-radius: 0.5rem; }
+
 #search form {
   padding-top: 5rem;
   width: 50rem;
@@ -117,14 +127,14 @@ header {
   text-align: left;
   display: block;
   background: #222222;
-  color: #EEEEEE;
+  color: #EEE;
   width: 33rem; }
 
 #search input {
   display: block;
   height: 6rem;
   width: 100%;
-  background: #eee;
+  background: #EEE;
   padding: 0 7rem 0 1rem; }
 
 #search button {
@@ -141,6 +151,7 @@ header {
   margin: 0 auto; }
 
 #results h2 {
+  margin: 2rem 0 2rem 0;
   padding-left: 0.3rem;
   font-size: 2rem;
   color: #EEE;
@@ -149,7 +160,21 @@ header {
 
 #results article {
   width: 25%;
-  display: inline-table; }
+  display: inline-table;
+  padding-bottom: 5rem; }
   #results article img {
     width: 80%;
     height: 200%; }
+  #results article h3 {
+    background: #222;
+    color: #EEE;
+    width: 90%;
+    padding-left: 0.2rem; }
+  #results article p {
+    background: #222;
+    color: #EEE;
+    width: 90%;
+    padding-left: 0.2rem; }
+
+#results a {
+  color: #222; }

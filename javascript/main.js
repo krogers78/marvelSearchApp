@@ -49,8 +49,13 @@ const renderData = (data) => {
                       <h3>${item.title}</h3>
                       <p>Issue Number ${item.issueNumber}</p>
                   </article>`
+  } else {
+    results += '<p>No results to display</p>'
   }
 })
+  //to keep the footer at the bottom of the page
+  document.querySelector('footer').style.position = 'static'
+  results += '<p class="button"><a href="#">View More on Marvel</a></p>'
   results += '</div>'
   searchSection.innerHTML = results
   results = ""

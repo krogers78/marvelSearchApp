@@ -4,6 +4,16 @@
 @import 'components/header.scss';
 @import 'components/classes.scss';
 
+//variables
+$primary-color: #EEE;
+
+//mixin
+@mixin article-description($back-color, $color, $width, $left-pad) {
+  background: $back-color;
+  color: $color;
+  width: $width;
+  padding-left: $left-pad;
+}
 
 #search {
   form {
@@ -17,14 +27,14 @@
     text-align: left;
     display: block;
     background: #222222;
-    color: #EEEEEE;
+    color: $primary-color;
     width: 33rem;
   }
   input {
     display: block;
     height: 6rem;
     width: 100%;
-    background: #eee;
+    background: $primary-color;
     padding: 0 7rem 0 1rem;
   }
   button {
@@ -44,33 +54,30 @@
     margin: 0 auto;
   }
   h2 {
+    margin: 2rem 0 2rem 0;
     padding-left: 0.3rem;
     // margin: 5rem 0 0 35rem;
     font-size: 2rem;
-    color: #EEE;
+    color: $primary-color;
     background: #222;
     width: 25rem;
   }
   article {
     width: 25%;
     display: inline-table;
+    padding-bottom: 5rem;
     img {
       width: 80%;
       height: 200%;
     }
+    h3 {
+      @include article-description(#222, $primary-color, 90%, 0.2rem);
+    }
+    p {
+      @include article-description(#222, $primary-color, 90%, 0.2rem);
+    }
   }
-  // p {
-  //   text-align: center;
-  //   margin-top: 15rem;
-  //   font-weight: bold;
-  //   font-size: 1.9rem;
-  // }
-  // a {
-  //   color: #222;
-  //   border: 0.3rem solid #F5A623;
-  //   background: #F5A623;
-  //   padding: 2rem 5rem;
-  //   box-sizing: border-box;
-  //   border-radius: 0.5rem;
-  // }
+  a {
+    color: #222;
+  }
 }

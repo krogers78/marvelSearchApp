@@ -5,8 +5,17 @@
 .searchForm {
   display: block;
   margin: 0 auto;
-  // text-align: center;
 }
 .wrapper {
   width: 85%;
+}
+.button {
+  width: 32rem;
+  margin: 8rem auto 5rem auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  background: #F5A623;
+  padding: 2rem 5rem;
+  border-radius: 0.5rem;
 }
