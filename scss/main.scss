@@ -1,19 +1,20 @@
+// Utilities
+@import 'utils/vars.scss';
+@import 'utils/mixins.scss';
+
+// Base Styles
 @import 'base/reset.scss';
-@import './base/basesetup.scss';
+@import 'base/basesetup.scss';
 @import 'base/footer.scss';
+
+// Layout-specific styles
+
+// Component Styles
 @import 'components/header.scss';
 @import 'components/classes.scss';
 
-//variables
-$primary-color: #EEE;
 
-//mixin
-@mixin article-description($back-color, $color, $width, $left-pad) {
-  background: $back-color;
-  color: $color;
-  width: $width;
-  padding-left: $left-pad;
-}
+
 
 #search {
   form {
@@ -26,7 +27,7 @@ $primary-color: #EEE;
   label {
     text-align: left;
     display: block;
-    background: #222222;
+    background: $seconday-color;
     color: $primary-color;
     width: 33rem;
   }
@@ -59,7 +60,7 @@ $primary-color: #EEE;
     // margin: 5rem 0 0 35rem;
     font-size: 2rem;
     color: $primary-color;
-    background: #222;
+    background: $seconday-color;
     width: 25rem;
   }
   article {
@@ -71,10 +72,10 @@ $primary-color: #EEE;
       height: 200%;
     }
     h3 {
-      @include article-description(#222, $primary-color, 90%, 0.2rem);
+      @include article-description($seconday-color, $primary-color, 90%, 0.2rem);
     }
     p {
-      @include article-description(#222, $primary-color, 90%, 0.2rem);
+      @include article-description($seconday-color, $primary-color, 90%, 0.2rem);
     }
   }
   a {
