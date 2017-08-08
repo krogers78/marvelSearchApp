@@ -19,12 +19,12 @@
       width: 80%;
       height: 200%;
     }
-    h3 {
+    h3, p {
       @include article-description($seconday-color, $primary-color, 90%, 0.2rem);
     }
-    p {
-      @include article-description($seconday-color, $primary-color, 90%, 0.2rem);
-    }
+    // p {
+    //   @include article-description($seconday-color, $primary-color, 90%, 0.2rem);
+    // }
   }
   a {
     color: #222;

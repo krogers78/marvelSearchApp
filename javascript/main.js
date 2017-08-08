@@ -6,7 +6,6 @@ const form = document.querySelector('#search form')
 
 let base = 'https://gateway.marvel.com:443/v1/public/comics?title='
 const key = '&apikey=619e8982dc6d0215038b7966347bc50a'
-let data = ""
 const params = "$query="
 const options = {
   method: "GET"
@@ -24,7 +23,7 @@ form.addEventListener('submit', e => {
     .then(responseAsJson => {
       console.log(responseAsJson)
 
-      data = responseAsJson.data.results
+      let data = responseAsJson.data.results
       renderData(data)
 
     })
@@ -33,9 +32,8 @@ form.addEventListener('submit', e => {
     })
 })
 
-let results = ""
-
 const renderData = (data) => {
+  let results = ""
   results += `<div class="wrapper">
               <h2>Results for ${input.value}</h2>`
   console.log(`<h2>Results for ${input.value}</h2>`)
